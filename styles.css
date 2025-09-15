@@ -1,0 +1,104 @@
+/* styles.css - Futuristic Cyberpunk Matrix Theme */
+
+/* Bootstrap overrides */
+body {
+    background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+    color: #b6ff00;
+    font-family: 'Orbitron', 'Roboto', 'Arial', sans-serif;
+    min-height: 100vh;
+}
+
+a, .navbar-nav .nav-link {
+    color: #39ff14 !important;
+    transition: color 0.2s;
+}
+a:hover, .navbar-nav .nav-link:hover {
+    color: #b6ff00 !important;
+    text-shadow: 0 0 8px #39ff14;
+}
+
+header, .navbar {
+    background: rgba(20, 30, 20, 0.95);
+    border-bottom: 2px solid #39ff14;
+    box-shadow: 0 2px 12px #39ff1433;
+}
+
+footer {
+    background: rgba(20, 30, 20, 0.95);
+    border-top: 2px solid #39ff14;
+    color: #39ff14;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -2px 12px #39ff1433;
+}
+
+.menu {
+    background: rgba(30, 40, 30, 0.95);
+    border-right: 2px solid #39ff14;
+    min-width: 180px;
+    padding: 1rem 0;
+}
+
+.menu .nav-link.active {
+    background: #39ff1422;
+    color: #b6ff00 !important;
+    border-left: 4px solid #39ff14;
+}
+
+.page-content {
+    background: rgba(10, 20, 10, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 0 24px #39ff1444;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #39ff14;
+    text-shadow: 0 0 8px #39ff1488;
+    font-family: 'Orbitron', 'Roboto', 'Arial', sans-serif;
+}
+
+.btn-cyber {
+    background: linear-gradient(90deg, #39ff14 0%, #b6ff00 100%);
+    color: #0f2027;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 0 8px #39ff1488;
+    transition: box-shadow 0.2s, background 0.2s;
+}
+.btn-cyber:hover {
+    background: linear-gradient(90deg, #b6ff00 0%, #39ff14 100%);
+    box-shadow: 0 0 16px #39ff14cc;
+    color: #0f2027;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #222;
+}
+::-webkit-scrollbar-thumb {
+    background: #39ff14;
+    border-radius: 4px;
+}
+
+input, textarea, select {
+    background: #222;
+    color: #39ff14;
+    border: 1px solid #39ff14;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 8px #39ff1488;
+    outline: none;
+}
+
+/* Matrix code rain effect (optional, for header) */
+.matrix-rain {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.15;
+}
